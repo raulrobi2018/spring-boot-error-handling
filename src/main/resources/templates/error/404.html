@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Error 404</title>
+</head>
+<body>
+	<h3>Page not found!</h3>
+	<hr>
+	
+	<!-- Todos estos atributos son preveidos automáticamente por Spring -->
+	<div th:text="${error}"></div>
+	<div th:text="${status}"></div>
+	<div th:text="${timestamp}"></div>
+	<hr>
+	<div th:text="${path}"></div>
+</body>
+</html>

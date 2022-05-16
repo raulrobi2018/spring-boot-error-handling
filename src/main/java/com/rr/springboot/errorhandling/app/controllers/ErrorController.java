@@ -9,7 +9,8 @@ public class ErrorController {
 	@GetMapping({ "/", "/index" })
 	public String index() {
 		
-		return "index";
+		int value = 100/0;
+		return "index2";
 	}
 
 }
